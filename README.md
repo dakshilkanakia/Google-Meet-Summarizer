@@ -2,8 +2,8 @@ This is a simple Google Meet summarizer for VTT files sent by google after every
 This uses Gemini flash 1.5
 
 Keep 
-vtt_parser.py
-meeting_summarizer.py
+vtt_parser.py,
+meeting_summarizer.py,
 gemini_summarizer.py
 in the same directory
 
