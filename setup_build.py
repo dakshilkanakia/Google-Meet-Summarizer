@@ -2,6 +2,7 @@
 import os
 import subprocess
 import sys
+from security import safe_command
 
 def setup_environment():
     """Setup everything needed to build the executable"""
@@ -110,7 +111,7 @@ def build_executable_simple():
         ]
         
         print("   Running PyInstaller...")
-        result = subprocess.run(build_command, 
+        result = safe_command.run(subprocess.run, build_command, 
                               capture_output=True, 
                               text=True, 
                               check=True)
